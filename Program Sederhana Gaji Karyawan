@@ -1,0 +1,112 @@
+import java.util.Scanner;
+
+public class GajiKaryawan {
+    public static void main(String[] args) {
+//      import input
+        Scanner userInput =  new Scanner(System.in);
+
+//      Inisiasi Golongan Gaji Karyawan
+        int golA = 5_000_000;
+        int golB = 6_500_000;
+        int golC = 9_500_000;
+
+//      Inputan Golongan, Jam Lembur
+        System.out.println("Masukkan Golongan Gaji(A/B/C/D) = ");
+        String golongan = userInput.next();
+        System.out.println("Masukkan Jam Lembur = ");
+        int jamLembur = userInput.nextInt();
+
+//      Gaji Golongan,Gaji Golongan dan output
+        int gajiGolongan = 0;
+        int gajiLembur = 0;
+        if (jamLembur == 1){
+            if (golongan.equals("A")){
+                gajiGolongan = golA;
+                gajiLembur = gajiGolongan * 30 / 100;
+                System.out.printf("Jumlah Penghasilan = %,d",gajiGolongan + gajiLembur);
+            } else if (golongan.equals("B")) {
+                gajiGolongan = golB;
+                gajiLembur = gajiGolongan * 30 / 100;
+                System.out.printf("Jumlah Penghasilan = %,d",gajiGolongan + gajiLembur);
+            }else if (golongan.equals("C")) {
+                gajiGolongan = golC;
+                gajiLembur = gajiGolongan * 30 / 100;
+                System.out.printf("Jumlah Penghasilan = %,d",gajiGolongan + gajiLembur);
+            }else {
+                System.out.println("Tidak Ditemukan Hasil");
+            }
+
+        }else if (jamLembur == 2) {
+            if (golongan.equals("A")){
+                gajiGolongan = golA;
+                gajiLembur = gajiGolongan * 32 / 100;
+                System.out.printf("Jumlah Penghasilan = %,d",gajiGolongan + gajiLembur);
+            } else if (golongan.equals("B")) {
+                gajiGolongan = golB;
+                gajiLembur = gajiGolongan * 32 / 100;
+                System.out.printf("Jumlah Penghasilan = %,d",gajiGolongan + gajiLembur);
+            }else if (golongan.equals("C")) {
+                gajiGolongan = golC;
+                gajiLembur = gajiGolongan * 32 / 100;
+                System.out.printf("Jumlah Penghasilan = %,d",gajiGolongan + gajiLembur);
+            }else {
+                System.out.println("Tidak Ditemukan Hasil");
+            }
+
+        } else if (jamLembur == 3) {
+            if (golongan.equals("A")){
+                gajiGolongan = golA;
+                gajiLembur = gajiGolongan * 34 / 100;
+                System.out.printf("Jumlah Penghasilan = %,d",gajiGolongan + gajiLembur);
+            } else if (golongan.equals("B")) {
+                gajiGolongan = golB;
+                gajiLembur = gajiGolongan * 34 / 100;
+                System.out.printf("Jumlah Penghasilan = %,d",gajiGolongan + gajiLembur);
+            }else if (golongan.equals("C")) {
+                gajiGolongan = golC;
+                gajiLembur = gajiGolongan * 34 / 100;
+                System.out.printf("Jumlah Penghasilan = %,d",gajiGolongan + gajiLembur);
+            }else {
+                System.out.println("Tidak Ditemukan Hasil");
+            }
+
+        } else if (jamLembur == 4) {
+            if (golongan.equals("A")){
+                gajiGolongan = golA;
+                gajiLembur = gajiGolongan * 36 / 100;
+                System.out.printf("Jumlah Penghasilan = %,d",gajiGolongan + gajiLembur);
+            } else if (golongan.equals("B")) {
+                gajiGolongan = golB;
+                gajiLembur = gajiGolongan * 36 / 100;
+                System.out.printf("Jumlah Penghasilan = %,d",gajiGolongan + gajiLembur);
+            }else if (golongan.equals("C")) {
+                gajiGolongan = golC;
+                gajiLembur = gajiGolongan * 36 / 100;
+                System.out.printf("Jumlah Penghasilan = %,d",gajiGolongan + gajiLembur);
+            }else {
+                System.out.println("Tidak Ditemukan Hasil");
+            }
+
+        } else if (jamLembur >= 5) {
+            if (golongan.equals("A")){
+                gajiGolongan = golA;
+                gajiLembur = gajiGolongan * 38 / 100;
+                System.out.printf("Jumlah Penghasilan = %,d",gajiGolongan + gajiLembur);
+            } else if (golongan.equals("B")) {
+                gajiGolongan = golB;
+                gajiLembur = gajiGolongan * 38 / 100;
+                System.out.printf("Jumlah Penghasilan = %,d",gajiGolongan + gajiLembur);
+            }else if (golongan.equals("C")) {
+                gajiGolongan = golC;
+                gajiLembur = gajiGolongan * 38 / 100;
+                System.out.printf("Jumlah Penghasilan = %,d",gajiGolongan + gajiLembur);
+            }else {
+                System.out.println("Tidak Ditemukan Hasil");
+            }
+        }else {
+            System.out.println("Tidak Ditemukan Hasil");
+        }
+
+
+    }
+}
